@@ -3,11 +3,14 @@ body{
     text-align: center;
     color: white;
 }
+img{
+    border-style: solid;
+    border-width: 5px;
+}
 h1{
     font-size: 90px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bolder;
-    font-style: italic;
 }
 button{
     border: none;
@@ -17,10 +20,52 @@ button{
     border-radius: 9px;
     margin-bottom: 40px;
 }
+.button-1{
+    background-color: #000;
+    color: aliceblue;
+}
 button:hover{
     font-size: 60px;
+    background-color: red;
+    color: #000;
 }
 
-.index-menu{
-    display: flex;
+
+
+
+/*backstory styling */
+.backstory-blokk{
+    background-color: antiquewhite;
+    border-radius: 9px;
+    padding: 30px 30px;
+    margin: auto;
+    width: 80%;
+    border: 3px solid rgb(250, 252, 250);
+
+}
+
+.backstory-tekstblokk{
+    color: black;
+    background-color: rgb(169, 195, 195);
+    border-radius: 9px;
+    font-size: 20px;
+    text-align: left;
+    padding: 8px 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+    width: 80%;
+    border: 5px solid rgb(255, 255, 255);
+
+}
+
+.backstory-imgblokk{
+    width: 900px;
+    background-color: antiquewhite;
+}
+
+/*hoved styling ligger under her*/
+.imgblokk{
+    background-image: url(../bilder/herjus.jpeg);
+    background-image: cover;
+
 }
