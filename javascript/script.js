@@ -3,32 +3,31 @@ function closeWindow() {
     window.close(); // This will attempt to close the current window/tab
 }
 // Get the modal
-var modal = document.getElementById("myModal");
 
 // gi verdi til ting for en indikator 
 
-//ncsdjkns
-var dataMaskin = document.getElementById("taDatamaskin")
-var deathToHerjus =document.getElementById("")
 
 
-//scroll funsjon 
+
+
 function scrollToSection(sectionId) {
+    const allSections = document.querySelectorAll('section');
+    allSections.forEach(section => {
+        if (section.id !== sectionId) {
+            section.style.display = 'none';
+        }
+    });
+
     let section = document.getElementById(sectionId);
     if (section) {
+        section.style.display = 'block';
         section.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 }
 
 
-function tilKjøkken(){
-    
-}
 
-function tilbakeTilsoveRoom(){
-    if(dataMaskin = true) {
-        dataMaskin.scrollToSection(deathToHerjus);
-    }else {
-        dataMaskin.scrollToSection(tilbakeTilsoverRom-2);
-    }
-}
+
+
+
+

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/test.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="start">
+        <h1>start game</h1>
+        <button onclick="scrollToSection('soverom')">play game</button>
+    </div>
+    <section id="soverom">
+        <div class="top-tekst">
+            <h1 class="beskrivelse">
+                Du er på soverommet til herjus
+            </h1>
+            <div class="buttons-1">
+                <button onclick="scrollToSection('section1')">Ta Pcen til herjus</button>
+                <button onclick="scrollToSection('section2')">Gå ut av soverommet og lås døren</button>
+                <button onclick="scrollToSection('section3')">Slå herjus</button>
+                <button onclick="scrollToSection('section4')">Lås vinduet til herjus sitt rom</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Avsnitt -->
+    <section id="section1">
+        <div class="top-tekst">
+            <h1 class="beskrivelse">
+                herjus skriker| Dialog H: Din hore!!! hvordan skal jeg game rust med gutta.
+            </h1>
+            <div class="buttons-1">
+                <button onclick="scrollToSection('soverom')">la han skrikke fra seg ut</button>
+                <button onclick="scrollToSection('section3')">slå til herjus</button>
+            </div>
+        </div>
+    </section>
+    <section id="section2">
+        <div class="top-tekst">
+            <h1 class="beskrivelse">
+                Du går ned til det nydellige kjøkkenet og hører fugle kvitter
+            </h1>
+            <div class="buttons-1">
+                <button onclick="scrollToSection('soverom')">Bestill Kebab</button>
+                <button onclick="scrollToSection('soverom')">Gå tilbake til soverom</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="section3">
+        <div class="top-tekst">
+            <h1 class="beskrivelse">
+                herjus har en mobil gjemt i lommen- herjus ringer poletet og de kommer til 
+                hust ditt poleti mannen sier at de må ta ungen din 
+            </h1>
+            <div class="buttons-1">
+                <button onclick="scrollToSection('politi1-lademta')">la dem ta herjus</button>
+                <button onclick="scrollToSection('politi2-prøvårizz')">prøv å rizz opp politimanen</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="section4">
+        <div class="top-tekst">
+            <h1 class="beskrivelse">
+                Du har nå låst vinduet
+            </h1>
+            <div class="buttons-1">
+                <button onclick="scrollToSection('soverom')">la dem ta herjus</button>
+                <button onclick="scrollToSection('section1')">prøv å rizz opp politimanen</button>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="politi1-storyline">
+        <section id="politi1-lademta">
+            <div class="top-tekst">
+                <h1 class="beskrivelse">
+                    Du lar dem ta herjus men begynner av en eller 
+                    annen rar grunn og savne han
+                </h1>
+                <div class="buttons-1">
+                    <button onclick="scrollToSection('politi1av-levinpeace')">lev in peace med dine valg og la barnevernet beholde hejus</button>
+                    <button onclick="scrollToSection('politi1-ringbarnevernet')">ring barne vernet og prøv og få tilbake herjus</button>
+                </div>
+            </div>
+        </section>
+        <section id="politi1-avispoliti">
+            <div class="top-tekst">
+                <h1 class="beskrivelse">
+                    Politimannen swither opp og tar herjus
+                </h1>
+                <div class="buttons-1">
+                    <button onclick="scrollToSection('politi1av-levinpeace')">lev in peace med dine valg og la barnevernet beholde hejus</button>
+                    <button onclick="scrollToSection('politi1-ringbarnevernet')">ring barne vernet og prøv og få tilbake herjus</button>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+    <div class="politi2-storyline">
+        <section id="politi2-prøvårizz">
+            <div class="top-tekst">
+                <h1 class="beskrivelse">
+                    du rizzer opp politimannen og han lar deg gå denne gangen| 
+                    men du er alt for flink og han spør deg på en date
+                </h1>
+                <div class="buttons-1">
+                    <button onclick="scrollToSection('politi1-avispoliti')">avis politi mannen</button>
+                    <button onclick="scrollToSection('section1')">gå på date med politimannen</button>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="slutter">
+        <div class="politi-slutter">
+            <section id="politi1av-levinpeace">
+                <div class="top-tekst">
+                    <h1 class="beskrivelse">
+                        Du lever et godt og langt liv uten 
+                        herjus og angrer ikke litt
+                    </h1>
+                </div>
+            </section>
+        </div>
+
+
+    </div>
+
+
+    <script src="javascript/test.js"></script>
+</body>
+</html>
