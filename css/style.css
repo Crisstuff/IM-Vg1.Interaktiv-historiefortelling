@@ -1,0 +1,26 @@
+body{
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+h1{
+    font-size: 90px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+}
+button{
+    border: none;
+    color: black;
+    background-color: white;
+    font-size: 50px;
+    border-radius: 9px;
+    margin-bottom: 40px;
+}
+button:hover{
+    font-size: 60px;
+}
+
+.index-menu{
+    display: flex;
+}
