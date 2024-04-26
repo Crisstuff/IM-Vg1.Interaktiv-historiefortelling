@@ -23,13 +23,19 @@ button{
 .button-1{
     background-color: #000;
     color: aliceblue;
+    font-size: 30px;
+}
+.button-1:hover{
+    font-size: 32px;
 }
 button:hover{
     font-size: 60px;
     background-color: red;
     color: #000;
 }
-
+.gameover-tekstblokk{
+    color: red;
+}
 
 
 
@@ -64,7 +70,29 @@ button:hover{
 }
 
 /*hoved styling ligger under her*/
-.imgblokk{
+.main-blokk{
+    background-color: antiquewhite;
+    border-radius: 9px;
+    padding: 30px 30px;
+    margin: auto;
+    width: 80%;
+    border: 3px solid rgb(250, 252, 250);
+}
+.main-tekstblokk{
+    color: black;
+    background-color: rgb(169, 195, 195);
+    border-radius: 9px;
+    font-size: 20px;
+    text-align: left;
+    padding: 8px 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+    width: 80%;
+    border: 5px solid rgb(255, 255, 255);
+}
+
+
+.main-imgblokk{
     background-image: url(../bilder/herjus.jpeg);
     width: 900px;
 
