@@ -8,9 +8,21 @@
 </head>
 <body>
     <div class="start">
-        <h1>start game</h1>
-        <button onclick="scrollToSection('politi1-lademta')">play game</button>
+        <div class="top-tekst-2">
+            <h1 class="beskrivelse">
+                Du er på soverommet til herjus
+            </h1>
+            <div class="buttons-1">
+                <button onclick="scrollToSection('politi1-avispoliti')">avis politi1</button>
+                <button onclick="scrollToSection('politi1-lademta')">la dem ta1</button>
+                <button onclick="scrollToSection('politi2-prøvårizz')">prøv og rizz2</button>
+                <button onclick="scrollToSection('')">Lås vinduet til herjus sitt rom2</button>
+            </div>
+        </div>
     </div>
+
+
+
     <div class="politi1-storyline">
         <section id="politi1-lademta">
             <div class="top-tekst">
@@ -24,6 +36,7 @@
                 </div>
             </div>
         </section>
+
         <section id="politi1-avispoliti">
             <div class="top-tekst">
                 <h1 class="beskrivelse">
@@ -38,19 +51,48 @@
 
 
     </div>
+
+
+
+
+
+
     <div class="politi2-storyline">
         <section id="politi2-prøvårizz">
             <div class="top-tekst">
                 <h1 class="beskrivelse">
-                    du rizzer opp politimannen og han lar deg gå denne gangen| 
+                    Du rizzer opp politimannen og han lar deg gå denne gangen| 
                     men du er alt for flink og han spør deg på en date
                 </h1>
                 <div class="buttons-1">
                     <button onclick="scrollToSection('politi1-avispoliti')">avis politi mannen</button>
-                    <button onclick="scrollToSection('section1')">gå på date med politimannen</button>
+                    <button onclick="scrollToSection('politi2-gåpådate')">gå på date med politimannen</button>
                 </div>
             </div>
         </section>
+
+        <section id="politi2-gåpådate">
+            <div class="top-tekst">
+                <h1 class="beskrivelse">
+                    du låser herjus inne på rommet sitt og går på date med 
+                    poletimannen. daten er kjedelig og ting er mid
+                </h1>
+                <div class="buttons-1">
+                    <button onclick="scrollToSection('politi2av-spørpolitimannenhvor')">spør poletimannen hvor mye han tjener</button>
+                    <button onclick="scrollToSection('politi2-')">prøv og gift deg med han 50% kjanse</button>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
 
     </div>
 
@@ -68,7 +110,7 @@
 
 
     <div class="slutter">
-        <div class="politi-slutter">
+        <div class="politi1">
             <section id="politi1av-levinpeace">
                 <div class="top-tekst">
                     <h1 class="beskrivelse">
@@ -78,8 +120,16 @@
                 </div>
             </section>
         </div>
-
-
+        <div class="politi2">
+            <section id="politi2av-spørpolitimannenhvor">
+                <div class="top-tekst">
+                    <h1 class="beskrivelse">
+                        politimannen sier at det er et av hans 
+                        største iks og kanselerer daten
+                    </h1>
+                </div>
+            </section>
+        </div>
     </div>
 
 

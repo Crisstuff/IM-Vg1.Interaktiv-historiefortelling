@@ -8,7 +8,7 @@ function scrollToSection(sectionId) {
         // Vis mål-avsnittet
         section.style.display = 'flex';
         // Rull til mål-avsnittet
-        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' }) 
     }
 }
 
@@ -28,15 +28,15 @@ window.addEventListener('scroll', () => {
 
 
 //tester scrolling via html dokumenter
-function scrollToStoryLine(storyLineHref) {
+function scrollToStoryLine(sectionId) {
     // Endre URL-en til politistoryline.html
-    const list = document.getElementsByTagName("p")
-
-    let section = window.getElementsByName(storyLineHref);
-    window.location.href ("politistoryline.html");
+    //const list = document.getElementsByTagName("p")
+    //let section = window.getElementsByName(storyLineHref);
+    window.location.href = "politistoryline.html";
+    let section = document.getElementById(sectionId);
     if (section) {
         // Lagre ID-en til den forrige seksjonen
-        previousSections.push(storyLineHref || sectionId);
+        previousSections.push( sectionId);
         // Vis mål-avsnittet
         section.style.display = 'flex';
         // Rull til mål-avsnittet
