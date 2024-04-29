@@ -28,6 +28,7 @@ function addStorySection(chapterFile, sectionId) {
             const storyContainer = document.getElementById('story-container'); //finner kontainern vi vil putte innholdet i
             storyContainer.innerHTML += section.outerHTML; // Legger til den valgte seksjonen til kontaineren
             setupButtons(); // Setter opp knappene for ny lastet seksjon
+            previousSections.push(sectionId);
             sectionId.scrollIntoView({ behavior: 'smooth', block: 'start' }) 
         }).catch(error => console.error('Error loading the section:', error));
 }

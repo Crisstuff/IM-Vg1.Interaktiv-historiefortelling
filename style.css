@@ -1,24 +1,30 @@
 
 .story-button{
-    color: white;
-    background-color: black;
+    border: none;
+    color: black;
+    background-color: white;
+    font-size: 30px;
+    border-radius: 9px;
+    margin-bottom: 40px;
+}
+
+.story-button:hover{
+    font-size: 34px;
+    background-color: red;
+    color: #000;
 }
 
 
 #story-container {
-    border: 1px solid #d80000;
-    justify-content: center;
-    align-items: center;
-}
-.button {
-    justify-content: center;
-    align-self: center;
-}
-.section {
+    border: none;
     height: 100vh;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    background-color: #f0f0f0;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f86b6b;
     margin: 0;
+}
+.side{
+    width: 1000px;
+    justify-content: center;
+    justify-items: center;
 }
