@@ -6,17 +6,12 @@ function addStorySection(chapterFile, sectionId) {
             const parser = new DOMParser(); //brukes til å parse (lese å forstå) data fra en html fil
             const doc = parser.parseFromString(html, 'text/html');
             const section = doc.getElementById(sectionId);
-            if (section) { // Check if section exists
-                section.style.display = "block"; // Sørger for at seksjonen er synlig
-                const storyContainer = document.getElementById('story-container'); //finner kontainern vi vil putte innholdet i
-                storyContainer.innerHTML = ""; // Clear the story container
-                storyContainer.appendChild(section); // Append the new section to the story container
-                setupButtons(); // Setter opp knappene for ny lastet seksjon
-                previousSections.push(sectionId);
-                scrollToSection(sectionId); // Scroll to the newly added section
-            } else {
-                console.error('Section not found:', sectionId);
-            }
+            section.style.display = "block"; // Sørger for at seksjonen er synlig
+            const storyContainer = document.getElementById('story-container'); //finner kontainern vi vil putte innholdet i
+            storyContainer.innerHTML += section.outerHTML; // Legger til den valgte seksjonen til kontaineren
+            setupButtons(); // Setter opp knappene for ny lastet seksjon
+            previousSections.push(sectionId);
+            scrollToSection(sectionId); // Scroll to the newly added section
         }).catch(error => console.error('Error loading the section:', error));
 }
 
