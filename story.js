@@ -27,7 +27,6 @@ function setupButtons() {
       const sectionId = event.target.dataset.section;
       const chapterFile = event.target.dataset.chapter;
       addStorySection(chapterFile, sectionId);
-      addStorySection("politisoryline", sectionId);
     });
   });
 }
