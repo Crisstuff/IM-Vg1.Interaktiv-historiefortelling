@@ -11,9 +11,8 @@ function addStorySection(chapterFile, sectionId) {
                 const storyContainer = document.getElementById('story-container'); //finner kontainern vi vil putte innholdet i
                 storyContainer.innerHTML = ""; // Clear the story container
                 storyContainer.appendChild(section); // Append the new section to the story container
-                setupButtons(); // Setter opp knappene for ny lastet seksjon
-                previousSections.push(sectionId);
-                scrollToSection(sectionId); // Scroll to the newly added section
+                //setupButtons(); // Setter opp knappene for ny lastet seksjon
+                scrollToSection(); // Scroll to the newly added section
             } else {
                 console.error('Section not found:', sectionId);
             }
@@ -30,6 +29,22 @@ function setupButtons() {
     });
   });
 }
+
+let previousSections = [];
+
+function scrollToSection(sectionId) {
+    let section = document.getElementById(sectionId);
+    if (section) {
+        // Lagre ID-en til den forrige seksjonen
+        previousSections.push(sectionId);
+        // Vis mål-avsnittet
+        section.style.display = 'flex';
+        // Rull til mål-avsnittet
+        setupButtons();
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' }) 
+    }
+}
+
 
 
 window.onload = addStorySection("start-1", "start");
