@@ -62,17 +62,11 @@ function myFunction() {
 
 
 
-function scrollTo50Section() {
-    // Generer en tilfeldig sjanse (0-100)
+function scrollTo50Section() {// Generer en tilfeldig sjanse (1-2)
     const randomSjanse = Math.floor(Math.random() * 1) + 2;
-    // Hvis sjanse er mindre enn eller lik 20, brukeren har fanget en måke
-    if (randomSjanse <= 50) {
-        const melding = 'Du fanget en måke og fikk 50kr!';
+    if (randomSjanse <= 1) {
         document.getElementById('politi2-50prøvoggift-1');
-
     } else {
-        // Hvis sjanse er over 25, brukeren klarte ikke å fange en måke
-        const melding = 'Du klarte ikke å fange en måke!';
         document.getElementById('politi2-50prøvoggift-2');
 
     }

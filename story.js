@@ -69,3 +69,13 @@ function scrollToSection(sectionId) {
 }
 
 window.onload = addStorySection("start-1", "start");
+
+function scrollTo50Section() {// Generer en tilfeldig sjanse (1-2)
+  const randomSjanse = Math.floor(Math.random() * 100) + 1;
+  if (randomSjanse <= 50) {
+      document.getElementById('p2-50prøvoggift-1');
+  } else {
+      document.getElementById('p2-50prøvoggift-2');
+
+  }
+}
