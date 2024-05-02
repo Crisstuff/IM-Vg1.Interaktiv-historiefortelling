@@ -2,16 +2,20 @@
 <div  id="start" class="side">
     <p> Du er på soverommet til Herjus</p>
     <button class="story-button" data-chapter="politi1" data-section="politi-start">Slå Herjus</button>
-    <button class="story-button" data-chapter="chapter1" data-section="wait">Vent på hjelp</button>
-    <button class="story-button" data-chapter="chapter1" data-section="explore">Utforsk området</button>
-    <button class="story-button" data-chapter="chapter1" data-section="wait">Vent på hjelp</button>
+    <button class="story-button" data-chapter="chapter1" data-section="wait">Ta mobilen, Pcen og alle teknologien til herius lås vinduet, døren & gå ned </button>
+    <button class="story-button" data-chapter="start-1" data-section="st-utforskomerådet">Utforsk området</button>
+    <button class="story-button" data-chapter="start-1" data-section="stslutt-gåutav">Gå ut av rommet uten og gjøre noe og kom tilbake etter en time</button>
 </div>
-<div id="explore">
-    <p>Du utforsker området og finner en elv.</p>
+<div id="st-utforskomerådet" class="side">
+    <p>du ser rundt i rom</p>
     <button class="story-button" data-chapter="chapter2" data-section="followRiver">Følg elven</button>
     <button class="story-button" data-chapter="chapter1" data-section="return">Gå tilbake til leiren</button>
 </div>
 <div id="wait" style="display: none;">
     <p>Du venter tålmodig. Noen timer senere hører du en lyd.</p>
     <button class="story-button" data-chapter="chapter1" data-section="investigate">Undersøk lyden</button>
+</div>
+<div id="stslutt-gåutav" class="side">
+    <p>Du venter tålmodig. Noen timer senere hører du en lyd.</p>
+    <button class="story-button"  onclick="reloadPage()">Start på nytt</button>
 </div>
