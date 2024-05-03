@@ -9,9 +9,7 @@
     width: 300px;
     padding:5px 9px;
 }
-p{
-    
-}
+
 
 .story-button:hover{
     font-size: 21px;
@@ -24,7 +22,7 @@ p{
 #story-container {
     border: none;
     height: 100vh;
-    font-size: 40px;
+    font-size: 37px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f86b6b;
     margin: 0;
