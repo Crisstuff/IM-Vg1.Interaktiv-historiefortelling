@@ -3,15 +3,18 @@
     border: none;
     color: black;
     background-color: white;
-    font-size: 25px;
+    font-size: 20px;
     border-radius: 9px;
     margin-bottom: 25px;
     width: 300px;
-
+    padding:5px 9px;
+}
+p{
+    
 }
 
 .story-button:hover{
-    font-size: 26px;
+    font-size: 21px;
     background-color: red;
     color: #000;
     transition: ease-in-out .3s;
@@ -21,7 +24,7 @@
 #story-container {
     border: none;
     height: 100vh;
-    font-size: 34px;
+    font-size: 40px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f86b6b;
     margin: 0;
@@ -35,7 +38,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
 }
 img{
     border: 3px solid green;
