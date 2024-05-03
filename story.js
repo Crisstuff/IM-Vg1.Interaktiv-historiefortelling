@@ -58,12 +58,31 @@ function reloadPage() {
 }
 
 
-function scrollTo50Section() {// Generer en tilfeldig sjanse (1-2)
-  const randomSjanse = Math.floor(Math.random() * 100) + 1;
-  if (randomSjanse <= 50) {
-      document.getElementById('p2-50prøvoggift-1');
-  } else {
-      document.getElementById('p2-slutt50prøvoggift-2');
 
+function randomRedirect() {
+  // Randomly choose between two section IDs
+  var randomNumber = Math.random();
+  
+  var redirectID;
+  if (randomNumber < 0.5) {
+      // 50% chance to go to this section
+      redirectID = '';
+  } else {
+      // 50% chance to go to this section if not the first one
+      redirectID = 'section2';
   }
+  location
+  
+}
+
+console.log
+var randomNumber = Math.random();
+  
+var redirectID;
+if (randomNumber < 0.5) {
+    // 50% chance to go to this section
+    redirectID = '';
+} else {
+    // 50% chance to go to this section if not the first one
+    redirectID = 'section2';
 }
