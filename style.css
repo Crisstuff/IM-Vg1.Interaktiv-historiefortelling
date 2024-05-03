@@ -3,14 +3,15 @@
     border: none;
     color: black;
     background-color: white;
-    font-size: 30px;
+    font-size: 25px;
     border-radius: 9px;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
     width: 300px;
+    height: 90px;
 }
 
 .story-button:hover{
-    font-size: 34px;
+    font-size: 26px;
     background-color: red;
     color: #000;
 }
@@ -19,7 +20,7 @@
 #story-container {
     border: none;
     height: 100vh;
-    font-size: 40px;
+    font-size: 34px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f86b6b;
     margin: 0;
@@ -34,4 +35,9 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+img{
+    border: 3px solid green;
+    width: 620px;
+
 }

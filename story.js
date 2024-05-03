@@ -49,24 +49,7 @@ function setupButtons() {
   }
 }
 
-let previousSections = [];
 
-function scrollToSection(sectionId) {
-  const section = document.getElementById(sectionId);
-
-  if (section) {
-    // Lagre ID-en til den forrige seksjonen
-    previousSections.push(sectionId);
-
-    // Vis mål-avsnittet
-    section.style.display = "flex";
-
-    // Rull til mål-avsnittet
-    section.scrollIntoView({ behavior: "smooth", block: "start" });
-
-
-  }
-}
 
 window.onload = addStorySection("start-1", "start");
 
