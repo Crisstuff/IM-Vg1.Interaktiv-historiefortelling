@@ -7,13 +7,14 @@
     border-radius: 9px;
     margin-bottom: 25px;
     width: 300px;
-    height: 90px;
+
 }
 
 .story-button:hover{
     font-size: 26px;
     background-color: red;
     color: #000;
+    transition: ease-in-out .3s;
 }
 
 
