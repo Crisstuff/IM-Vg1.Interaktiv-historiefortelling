@@ -59,30 +59,3 @@ function reloadPage() {
 
 
 
-function randomRedirect() {
-  // Randomly choose between two section IDs
-  var randomNumber = Math.random();
-  
-  var redirectID;
-  if (randomNumber < 0.5) {
-      // 50% chance to go to this section
-      redirectID = '';
-  } else {
-      // 50% chance to go to this section if not the first one
-      redirectID = 'section2';
-  }
-  location
-  
-}
-
-console.log
-var randomNumber = Math.random();
-  
-var redirectID;
-if (randomNumber < 0.5) {
-    // 50% chance to go to this section
-    redirectID = '';
-} else {
-    // 50% chance to go to this section if not the first one
-    redirectID = 'section2';
-}
