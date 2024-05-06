@@ -1,8 +1,8 @@
 
 .story-button{
     border: none;
-    color: black;
-    background-color: white;
+    color: white;
+    background-color:rgb(32, 52, 110);
     font-size: 20px;
     border-radius: 9px;
     margin-bottom: 25px;
@@ -13,8 +13,8 @@
 
 .story-button:hover{
     font-size: 21px;
-    background-color: red;
-    color: #000;
+    background-color: rgb(228, 117, 12);
+    color: #ffffff;
     transition: ease-in-out .3s;
 }
 
@@ -24,13 +24,12 @@
     height: 100vh;
     font-size: 37px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f86b6b;
     margin: 0;
 }
 .side{
-    border: 3px solid green;
+    border: 3px solid rgb(222, 123, 25);
     text-align: center;
-    background-color: #c8c0c0;
+    background-color: #ffffff;
     height: 100%;
     width: 100%;
     display: flex;
@@ -38,7 +37,6 @@
     align-items: center;
 }
 img{
-    border: 3px solid green;
+    border: 3px solid rgb(196, 195, 146);
     width: 620px;
-
 }
